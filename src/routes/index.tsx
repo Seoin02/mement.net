@@ -1,61 +1,53 @@
 import { createBrowserRouter } from 'react-router-dom';
-import HomePage from '@/pages/HomePage';
 import RootLayout from '@/components/Layout';
+import ErrorPage from '@/pages/ErrorPage';
+import HomePage from '@/pages/HomePage';
 import AboutPage from '@/pages/AboutPage';
 import BrandsPage from '@/pages/BrandsPage';
 import CommunityPage from '@/pages/CommunityPage';
 import ContactPage from '@/pages/ContactPage';
-import ErrorPage from '@/pages/ErrorPage';
-import { Suspense } from 'react';
+import Loading from '@/pages/Loading';
 
 export const router = createBrowserRouter([
   {
     path: '/',
-      element: <RootLayout />,
+      element: (
+          <Loading />
+        ),
       errorElement: <ErrorPage />,
       children: [
         {
           path: '',
           element: (
-            <Suspense fallback={<div>Loading...</div>}>
-              <HomePage />
-            </Suspense>
+            <HomePage />
           ),
           children: [],
         },
         {
           path: 'about',
           element: (
-            <Suspense fallback={<div>Loading...</div>}>
               <AboutPage />
-            </Suspense>
           ),
           children: [],
         },
         {
           path: 'brands',
           element: (
-            <Suspense fallback={<div>Loading...</div>}>
-              <BrandsPage />
-            </Suspense>
+            <BrandsPage />
           ),
           children: [],
         },
         {
           path: 'community',
           element: (
-            <Suspense fallback={<div>Loading...</div>}>
-              <CommunityPage />
-            </Suspense>
+            <CommunityPage />
           ),
           children: [],
         },
         {
           path: 'contact',
           element: (
-            <Suspense fallback={<div>Loading...</div>}>
-              <ContactPage />
-            </Suspense>
+            <ContactPage />
           ),
           children: [],
         },

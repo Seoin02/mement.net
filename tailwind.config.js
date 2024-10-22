@@ -26,11 +26,20 @@ export default {
             opacity: '1',
             transform: 'translateZ(0)'
           }
+        },
+        fadeIn: {
+          '0%': {
+            opacity: '0',
+          },
+          'to': {
+            opacity: '1',
+          }
         }
       },
       animation: {
         fadeInLeft: 'fadeInLeft 1s',
         fadeInRight: 'fadeInRight 1s',
+        fadeIn: 'fadeIn 2s',
       },
       colors: {
         red: '#D6173A',
