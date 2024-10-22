@@ -1,44 +1,68 @@
 /** @type {import('tailwindcss').Config} */
-
-export const content = ['./src/**/*.{js,ts,jsx,tsx}'];
-export const theme = {
-  extend: {
-    fontFamily: {
-      pretendard: ['Pretendard'],
-    },
-    backgroundColor: {
-      'light-gray': '#f5f5f5',
-    },
-    colors: {
-      red: '#D6173A',
-      gray: {
-        10: '#F3F4F6',
-        50: '#6B7280',
-        80: '#111927',
+export default {
+  content: ['./src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      fontFamily: {
+        pretendard: ['Pretendard'],
       },
-      purple: {
-        10: '#F4ECFC',
-        30: '#eac1f9',
-        50: '#760DDE',
+      keyframes: {
+        fadeInLeft: {
+          '0%': {
+            opacity: '0',
+            transform: 'translate3d(-100%, 0, 0)'
+          },
+          'to': {
+            opacity: '1',
+            transform: 'translateZ(0)'
+          }
+        },
+        fadeInRight: {
+          '0%': {
+            opacity: '0',
+            transform: 'translate3d(100%, 0, 0)'
+          },
+          'to': {
+            opacity: '1',
+            transform: 'translateZ(0)'
+          }
+        }
       },
-      yellow: {
-        50: '#FFD400',
+      animation: {
+        fadeInLeft: 'fadeInLeft 1s',
+        fadeInRight: 'fadeInRight 1s',
       },
-      blue: {
-        10: '#FAF9FF',
-      },
-      'sky-blue': {
-        50: '#8eeefd',
-      },
-      green: {
-        50: '#98f49b',
-      },
-      orange: {
-        50: '#facf8f',
-      },
-      pink: {
-        50: '#f8b9f2',
+      colors: {
+        red: '#D6173A',
+        gray: {
+          10: '#F3F4F6',
+          50: '#6B7280',
+          80: '#111927',
+        },
+        purple: {
+          10: '#F4ECFC',
+          30: '#eac1f9',
+          50: '#760DDE',
+        },
+        yellow: {
+          50: '#FFD400',
+        },
+        blue: {
+          10: '#FAF9FF',
+        },
+        'sky-blue': {
+          50: '#8eeefd',
+        },
+        green: {
+          50: '#98f49b',
+        },
+        orange: {
+          50: '#facf8f',
+        },
+        pink: {
+          50: '#f8b9f2',
+        },
       },
     },
   },
-};
+}

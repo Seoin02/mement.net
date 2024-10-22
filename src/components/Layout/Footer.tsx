@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 
 export default function Footer(): JSX.Element {
-  return <footer className="flex flex-row justify-between items-center p-4">
+  return <footer className="flex flex-row justify-between items-center p-4 mr-8 ml-8">
     <nav className="flex gap-8">
         <Link to="/about" className="text-white font-bold">About</Link>
         <Link to="/brands" className="text-white font-bold">Brands</Link>

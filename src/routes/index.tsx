@@ -5,35 +5,58 @@ import AboutPage from '@/pages/AboutPage';
 import BrandsPage from '@/pages/BrandsPage';
 import CommunityPage from '@/pages/CommunityPage';
 import ContactPage from '@/pages/ContactPage';
+import ErrorPage from '@/pages/ErrorPage';
+import { Suspense } from 'react';
 
 export const router = createBrowserRouter([
   {
     path: '/',
       element: <RootLayout />,
+      errorElement: <ErrorPage />,
       children: [
         {
           path: '',
-          element: <HomePage />,
+          element: (
+            <Suspense fallback={<div>Loading...</div>}>
+              <HomePage />
+            </Suspense>
+          ),
           children: [],
         },
         {
           path: 'about',
-          element: <AboutPage />,
+          element: (
+            <Suspense fallback={<div>Loading...</div>}>
+              <AboutPage />
+            </Suspense>
+          ),
           children: [],
         },
         {
           path: 'brands',
-          element: <BrandsPage />,
+          element: (
+            <Suspense fallback={<div>Loading...</div>}>
+              <BrandsPage />
+            </Suspense>
+          ),
           children: [],
         },
         {
           path: 'community',
-          element: <CommunityPage />,
+          element: (
+            <Suspense fallback={<div>Loading...</div>}>
+              <CommunityPage />
+            </Suspense>
+          ),
           children: [],
         },
         {
           path: 'contact',
-          element: <ContactPage />,
+          element: (
+            <Suspense fallback={<div>Loading...</div>}>
+              <ContactPage />
+            </Suspense>
+          ),
           children: [],
         },
       ],
