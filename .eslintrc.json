@@ -1,0 +1,23 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+    "parserOptions": {
+      "ecmaVersion": 2021,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "plugins": ["@typescript-eslint"],
+    "settings": {
+      "import/resolver": {
+        "alias": {
+          "map": [["@", "./src"]],
+          "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        }
+      }
+    },
+    "rules": {
+      "func-style": ["error", "expression"]
+  }
+}
