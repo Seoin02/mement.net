@@ -9,6 +9,6 @@ body {
 
 @layer base {
   h1 {
-    @apply text-[42px] font-bold;
+    @apply text-[42px] font-medium;
   }
 }
