@@ -6,3 +6,9 @@ body {
   background-color: #000;
   box-sizing: border-box;
 }
+
+@layer base {
+  h1 {
+    @apply text-[42px] font-bold;
+  }
+}

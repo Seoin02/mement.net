@@ -1,9 +1,7 @@
-import { Link } from 'react-router-dom'
-
 export default function Header() {
 
   return (
-    <header className="flex flex-row justify-between items-center p-4 mr-8 ml-8">
+    <header className="flex flex-row justify-between items-center mr-[160px] ml-[160px]">
         <a href="/">
             <h1 className="text-2xl text-white">MEMENT</h1>
         </a>

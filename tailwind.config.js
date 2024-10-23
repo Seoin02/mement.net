@@ -34,12 +34,23 @@ export default {
           'to': {
             opacity: '1',
           }
+        },
+        textFade: {
+          '0%': {
+            opacity: '0',
+            transform: 'translate(40px, 0px)',
+          },
+          'to': {
+            opacity: '1',
+            transform: 'translate(0px, 0px)',
+          }
         }
       },
       animation: {
         fadeInLeft: 'fadeInLeft 1s',
         fadeInRight: 'fadeInRight 1s',
         fadeIn: 'fadeIn 2s',
+        textFade: 'textFade 1s ease-out',
       },
       colors: {
         red: '#D6173A',
