@@ -1,5 +1,3 @@
-import CrmCircle from '@/components/CrmCircle';
-import ImageBox from '@/components/ImageBox';
 import VideoBox from '@/components/VideoBox';
 import '@/styles/animation.css';
 import { motion, useScroll, useTransform } from 'framer-motion';

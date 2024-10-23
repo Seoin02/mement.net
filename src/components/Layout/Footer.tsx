@@ -1,11 +1,9 @@
-import { Link } from 'react-router-dom'
-
 export default function Footer(): JSX.Element {
   return <footer className="flex flex-row justify-between items-center mr-[160px] ml-[160px]">
     <nav className="flex gap-8">
-        <Link to="/about" className="text-white font-bold">About</Link>
-        <Link to="/brands" className="text-white font-bold">Brands</Link>
-        <Link to="/community" className="text-white font-bold">Community</Link>
+        <a href="/about" className="text-white font-bold">About</a>
+        <a href="/brands" className="text-white font-bold">Brands</a>
+        <a href="/community" className="text-white font-bold">Community</a>
     </nav>
     <ul className="text-[#5C5C5C] text-right text-[14px]">
           <li>9F, 509, Teheran-ro, Gangnam-gu, Seoul, Republic of Korea<br/>

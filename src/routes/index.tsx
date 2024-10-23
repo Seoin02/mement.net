@@ -5,6 +5,7 @@ import BrandsPage from '@/pages/BrandsPage';
 import CommunityPage from '@/pages/CommunityPage';
 import ContactPage from '@/pages/ContactPage';
 import Loading from '@/pages/Loading';
+import AskBranch from '@/pages/AskBranch';
 
 export const router = createBrowserRouter([
   {
@@ -38,6 +39,13 @@ export const router = createBrowserRouter([
           path: 'community',
           element: (
             <CommunityPage />
+          ),
+          children: [],
+        },
+        {
+          path: 'ask-branch',
+          element: (
+            <AskBranch />
           ),
           children: [],
         },
