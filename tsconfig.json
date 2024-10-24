@@ -23,6 +23,7 @@
     "paths": {
       "@/*": ["./*"]
     },
+    "types": ["vite/client", "./src/googleMaps.d.ts", "@types/google.maps"]
   },
   "include": ["src"]
 }

@@ -61,7 +61,7 @@ function handleSubmit(e: FormEvent<HTMLFormElement>) {
         </section>
         {isSubmitted && <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
           <div className="bg-white p-12 rounded-lg">
-            <h2 className="text-2xl font-bold mb-4">Thank you for your inquiry!</h2>
+            <p className="text-2xl font-bold mb-4">Thank you for your inquiry!</p>
             <p className="text-gray-600">We will get back to you soon.</p>
           </div>
         </div>}

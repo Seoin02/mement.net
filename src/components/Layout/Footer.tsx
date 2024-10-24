@@ -1,5 +1,5 @@
 export default function Footer(): JSX.Element {
-  return <footer className="flex flex-row justify-between items-center mr-[160px] ml-[160px]">
+  return <footer className="flex flex-row justify-between items-center mx-[160px]">
     <nav className="flex gap-8">
         <a href="/about" className="text-white font-bold">About</a>
         <a href="/brands" className="text-white font-bold">Brands</a>

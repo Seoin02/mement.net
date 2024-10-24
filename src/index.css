@@ -11,4 +11,8 @@ body {
   h1 {
     @apply text-[42px] font-medium;
   }
+
+  h2 {
+    @apply text-[32px] font-medium;
+  }
 }
