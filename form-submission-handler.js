@@ -70,9 +70,13 @@
       xhr.onreadystatechange = function() {
           if (xhr.readyState === 4 && xhr.status === 200) {
             form.reset();
+              window.location.href = "/";
             var formElements = form.querySelector(".form-elements")
             if (formElements) {
               formElements.style.display = "none"; // hide form
+            } else {
+              console.error("폼 제출 실패")
+              alert("폼 제출에 실패했습니다. 잠시후 다시 시도해주세요.")
             }
             var thankYouMessage = form.querySelector(".thankyou_message");
             if (thankYouMessage) {
