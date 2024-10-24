@@ -1,0 +1,1 @@
+declare module 'translations/i18n';
