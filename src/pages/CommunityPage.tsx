@@ -10,7 +10,7 @@ export default function CommunityPage() {
     
   return (
     <main className="bg-white w-screen h-100% flex flex-col gap-20 pb-40">
-      <VideoBox videoLink="https://mement.net/img/Video/Mement_main.mp4" firstTitle="Mement" secondTitle={t("CommunityPage.videoTitle2")} />
+      <VideoBox videoLink="https://mement.net/img/Video/Mement_main.mp4#t=3" firstTitle="Mement" secondTitle={t("CommunityPage.videoTitle2")} />
       <motion.div className="max-w-7xl flex flex-col items-center gap-8 px-[100px]" style={{ opacity: opacity, x: translateX }}>
       <h1 className="w-full text-left animate-fade-in">{t("CommunityPage.Community")}</h1>
       <p className="w-full text-left text-[20px] break-words animate-textFade leading-loose">
