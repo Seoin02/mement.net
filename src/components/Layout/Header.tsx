@@ -29,7 +29,7 @@ export default function Header() {
   return (
     <header className="flex flex-row justify-between items-center mr-[160px] ml-[160px]">
         <a href="/">
-            <h1 className="text-2xl text-white">MEMENT</h1>
+            <img src="/image/Logos/MEMENT.png" alt="logo" className="w-24" />
         </a>
       <nav className="flex gap-8">
         <a href="/about" className="text-white font-bold hover:text-gray-400">About</a>
@@ -37,7 +37,9 @@ export default function Header() {
         <a href="/community" className="text-white font-bold hover:text-gray-400">Community</a>
         <a href="/contact" className="text-white font-bold hover:text-gray-400">Contact Us</a>
         <div ref={languageRef} className="w-16 cursor-pointer relative text-white font-bold hover:text-gray-400 z-10" onClick={() => setIsLanguageMenuOpen(!isLanguageMenuOpen)}>
-        ▶ {t("Header.Language")}
+          <div className="flex flex-row gap-2 items-center">
+            <img src="/image/lang.svg" alt="language change" className="w-4" /> {t("Header.Language")}
+          </div>
           {isLanguageMenuOpen && (
             <div className="absolute -top-1 -left-1 w-16 h-12 bg-black">
               <div className={`${i18n.language === "ko" ? "text-white" : "text-gray-400"} bg-black px-2 py-1 cursor-pointer w-16 whitespace-nowrap`} onClick={() => handleChangeLanguage("ko")}>✓ KOR</div>

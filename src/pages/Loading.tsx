@@ -9,6 +9,6 @@ export default function Loading() {
     }, 2000);
 
   return (
-     isLoading ? (<div className="w-full h-full bg-black text-white flex justify-center items-center text-xl animate-fadeIn">Beauty X Tech</div>) : <RootLayout />
+     isLoading ? (<div className="w-full h-full bg-black flex justify-center items-center animate-fadeIn"><img src="/image/beautyTech.png" alt="logo" className="w-48" /></div>) : <RootLayout />
   )
 }
