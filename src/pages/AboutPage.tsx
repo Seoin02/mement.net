@@ -1,33 +1,33 @@
+import CircleBackground from '@/components/CircleBackground';
 import CrmCircle from '@/components/CrmCircle';
 import ImageBox from '@/components/ImageBox';
 import VideoBox from '@/components/VideoBox';
 import '@/styles/animation.css';
-import { motion, useScroll, useTransform } from 'framer-motion';
 import { t } from 'i18next';
 
 export default function AboutPage() {
-  const { scrollYProgress } = useScroll();
-  const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
-  const translateX = useTransform(scrollYProgress, [0, 2], [80, 0]);
     
   return (
     <main className="bg-white w-screen h-100% flex flex-col gap-20">
       <VideoBox videoLink="https://mement.net/img/Video/Mement_main.mp4" firstTitle={t("AboutPage.videoTitle1")} secondTitle={t("AboutPage.videoTitle2")}/>
-      <motion.div className="max-w-7xl flex flex-col items-center gap-8 pl-[100px] pr-[100px]" style={{ opacity: opacity, x: translateX }}>
-      <h1 className="w-full text-left animate-fade-in">{t("AboutPage.BeautyXTech")}</h1>
-      <p className="w-full text-left text-[20px] break-words leading-loose animate-textFade">
+      <section className="w-[75%] flex flex-col items-center gap-8 mx-auto">
+      <h1 data-aos="fade-left" className="w-full text-left">{t("AboutPage.BeautyXTech")}</h1>
+      <p data-aos="fade-left" className="w-full text-left text-[20px] break-words leading-loose">
       {t("AboutPage.description1")}
       </p>
-    </motion.div>
-      <div className="flex gap-20 max-w-7xl pl-[100px] pr-[100px]">
-      <motion.div className="w-[480px] flex flex-col items-center gap-8" style={{ opacity: opacity, x: translateX }}>
-      <h1 className="w-full text-left animate-fade-in">{t("AboutPage.Solutions")}</h1>
-      <p className="w-full text-left text-[20px] break-words leading-loose animate-textFade">
+      </section>
+      <section className="w-[75%] flex flex-row items-center gap-40 mx-auto">
+        <div className="w-[450px] flex flex-col items-center gap-8">
+          <h1 data-aos="fade-left" className="w-full text-left">{t("AboutPage.Solutions")}</h1>
+      <p data-aos="fade-left" className="w-full text-left text-[20px] break-words leading-loose animate-textFade">
       {t("AboutPage.description2")}
-      </p>
-    </motion.div>
-        <CrmCircle />
-      </div>
+          </p>
+        </div>
+        <div className="w-[400px] h-[640px] mb-12 relative">
+            <CircleBackground />
+            <CrmCircle />
+        </div>
+      </section>
       <div className="section list" id="List">
     <div className="grid grid-cols-3 gap-12 pl-[160px] pr-[160px] pt-[80px] pb-[80px]">
       <ImageBox title={t("AboutPage.cardTitle1")} description={t("AboutPage.cardDescription1")} image="/image/About/crm.png" />
