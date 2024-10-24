@@ -1,3 +1,4 @@
+import { t } from "i18next";
 import { useEffect, useCallback } from "react";
 
 export default function ContactPage() {
@@ -61,7 +62,7 @@ export default function ContactPage() {
   return (
     <main className="bg-white w-screen h-100% flex flex-col items-center pt-20 gap-28">
       <section className="flex flex-row justify-between w-[78%]">
-        <h1>Headquarters</h1>
+        <h1>{t("ContactPage.HeadQuarters")}</h1>
         <div className="flex flex-col items-start w-[50%]">
           <h2>Mement Co. Ltd.</h2>
           <p>9F, 509, Teheran-ro, Gangnam-gu, Seoul, Republic of Korea</p>
@@ -70,7 +71,7 @@ export default function ContactPage() {
         </div>
       </section>
       <section className="flex flex-row justify-between w-[78%]">
-        <h1>Subsidiaries</h1>
+        <h1>{t("ContactPage.Subsidiaries")}</h1>
         <div className="flex flex-col items-start w-[50%]">
           <h2 className="text-left">Mement Hong Kong Limited</h2>
           <p className="text-left">Unit 609, 6/F, 700 Nathan Road, Mong Kok, Hong Kong</p>

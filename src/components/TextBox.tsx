@@ -15,7 +15,7 @@ export default function TextBox({title, description, children}: PropsWithChildre
     return (
     <motion.div className="max-w-7xl min-w-[480px] flex flex-col items-center gap-8" style={{ opacity: opacity, x: translateX }}>
       <h1 className="w-full text-left animate-fade-in">{title}</h1>
-      <p className="w-full text-left text-[20px] break-words animate-textFade">{description}</p>
+      <p className="w-full text-left text-[20px] break-words leading-relaxed animate-textFade">{description}</p>
         {children}
     </motion.div>
   )

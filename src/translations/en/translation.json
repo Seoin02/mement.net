@@ -1,0 +1,95 @@
+{
+    "HomePage": {
+        "videoTitle1": "Tech Company",
+        "videoTitle2": "running Beauty business"
+    },
+    "AboutPage": {
+        "videoTitle1": "Tech Company",
+        "videoTitle2": "running Beauty business",
+        "BeautyXTech": "Beauty X Tech",
+        "description1": "Mement Co., Ltd is an innovative beauty-tech company headquartered in South Korea. We are able to manage and provide medical beauty services and beauty product sales around the globe, such as Hong Kong and Vietnam market. We collect wide range of customer data with our own IT solution and connect these data to big tech company platforms, such as Google, Amazon, Facebook, Apple, etc. to operate beauty businesses with a tailored customer environment. Mement Co., Ltd ventures beyond the traditional beauty service providers and sustainably expanding its growing business with our advancing information technology system and embracing the latest emerging technologies together from big tech companies.",
+        "Solutions": "Solutions",
+        "description2": "Connected solutions through Customer Relationship Management (CRM) generate wide range of data, including user activities. E-commerce based websites and integrated iOS / Android applications provide a tailored environment from wide rage of customer data and deliver best beauty services experience to users. Connected solutions of IT based medical staff training, human resources management, IoT and messaging services, etc. result an automation in each work flow to achieve efficient business operations.",
+        "cardTitle1": "CRM",
+        "cardDescription1": "Electronic Medical Record",
+        "cardTitle2": "Web",
+        "cardDescription2": "E-commerce based Web",
+        "cardTitle3": "App",
+        "cardDescription3": "Tailor-made product recommendations based on user activity data",
+        "cardTitle4": "HR Solution",
+        "cardDescription4": "IT Solution for Human Resource Management",
+        "cardTitle5": "Edu.",
+        "cardDescription5": "Contents Security / Assessment",
+        "cardTitle6": "Messaging",
+        "cardDescription6": "Data Encryption",
+        "cardTitle7": "Realtime Report",
+        "cardDescription7": "Data Visualization",
+        "cardTitle8": "Display Control",
+        "cardDescription8": "Single-Board Computer Display Content Management",
+        "cardTitle9": "App for Clinic",
+        "cardDescription9": "Android Camera / iOS Self Check-in / Digital Consent"
+    },
+    "BrandsPage": {
+        "videoTitle1": "Global",
+        "videoTitle2": "Beauty Brand",
+        "Brands": "Brands",
+        "description1": "  Mement Co., Ltd owns aesthetic clinic brands, including 'Muse Clinic', 'Shine Beam', 'Skin and Beam' and a dental clinic, 'Coconut'. We conduct business with the MSO (Medical Service Operation) model and provide hospital operation related consulting services, including IT solutions to our clinics in Korea. We grow and develop through directly owned and managed beauty centres in Hong Kong and Vietnam to becoming an international beauty brand. Furthermore, we are currently selling our own-brand beauty products 'I'M MUSE' and 'What's M' domestically and expanding into the overseas market, such as China.",
+        "FranchiseClinicsInKorea": "Franchise Clinics in Korea",
+        "OverseasCorporateOwnedStore": "Overseas corporate-owned store",
+        "GeographicalCoverage": "Geographical Coverage",
+        "description2": "We have 44 franchised clinics nationwide in Korea, including 'Muse Clinic' and 'Shine Beam'. In addition, we have 4 directly-operated clinics overseas, which include 3 branches in Hong Kong, located in Mong Kok, Causeway Bay, Tsim Sha Tsui and 1 branch in Vietnam, located in Ho Chi Minh City."
+    },
+    "CommunityPage": {
+        "videoTitle1": "Mement",
+        "videoTitle2": "Community",
+        "Community": "Community",
+        "description": "Mement provides overall connected IT solutions. Based on market-leading IT technology, we have been working with the efficient clinic operation and growth of overseas coporate-owned clinics and franchise clinics in Korea. Check out Mement's updates in more details in the community.",
+        "AskBranch": "Ask Branch"
+    },
+    "AskBranchPage": {
+        "AskBranch": "Ask Branch",
+        "name": "name",
+        "age": "age",
+        "phoneNumber": "phone number",
+        "prefferedLocation": "preffered location",
+        "branchInquiryDetails": "branch inquiry details",
+        "gender": "gender",
+        "male": "male",
+        "female": "female",
+        "email": "email",
+        "PlannedOpeningDate": "planned opening date",
+        "Send": "Send",
+        "thankYou": "Thank you",
+        "weWillGetBackToYouSoon": "We will get back to you soon."
+    },
+    "ContactPage": {
+        "HeadQuarters": "Headquarters",
+        "HeadQuarterName": "Mement Co. Ltd",
+        "HeadQuartersAddress": "9F, 509, Teheran-ro, Gangnam-gu, Seoul, Republic of Korea",
+        "Subsidiaries": "Subsidiaries",
+        "SubsidiariesName1": "Mement Hong Kong Limited",
+        "description1": "Unit 609, 6/F, 700 Nathan Road, Mong Kok, Hong Kong",
+        "SubsidiariesName2": "MEMENT Vietnam Company Limited",
+        "description2": "73A, Nguyễn Thị Minh Khai, Phường Phạm Ngũ Lão, Quận 1, Hồ Chí Minh, Vietnam",
+        "SubsidiariesName3": "MEMENT Beauty Shenzhen Co. Ltd",
+        "description3": "Room A173, Block A01, Shanling Digits, No. 10 Chiwan One Avenue, Shekou, Nanshan District, Shenzhen City, Guangdong Province, P.R.C, China",
+        "SubsidiariesName4": "MEMENT 株式会社"
+    },
+    "Header": {
+        "About": "About",
+        "Brands": "Brands",
+        "Community": "Community",
+        "ContactUs": "Contact Us",
+        "Language": "ENG"
+    },
+    "Footer": {
+        "About": "About",
+        "Brands": "Brands",
+        "Community": "Community",
+        "Address": "9F, 509, Teheran-ro, Gangnam-gu, Seoul, Republic of Korea",
+        "Owner": "Owner EUNHWAN HA | BR# 364-86-00795",
+        "Copyright": "Copyright © 2019 MEMENT CO., LTD. All rights reserved.",
+        "AskUs": "Ask Us"
+    }
+    
+}

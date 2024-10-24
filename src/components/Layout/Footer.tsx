@@ -1,3 +1,5 @@
+import { t } from "i18next";
+
 export default function Footer(): JSX.Element {
   return <footer className="flex flex-row justify-between items-center mx-[160px]">
     <nav className="flex gap-8">
@@ -10,7 +12,7 @@ export default function Footer(): JSX.Element {
           Owner EUNHWAN HA | BR# 364-86-00795<br/>
           Copyright © 2019 MEMENT CO., LTD. All rights reserved.</li>
           <br/>
-          <li>support@mement.net <a href="/community/view?read=10">가맹문의</a></li>
+          <li>support@mement.net <a href="/community/view?read=10">{t("Footer.AskUs")}</a></li>
           <br/>
         </ul>
   </footer>;
