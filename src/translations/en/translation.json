@@ -57,7 +57,7 @@
         "male": "male",
         "female": "female",
         "email": "email",
-        "PlannedOpeningDate": "planned opening date",
+        "plannedOpeningDate": "planned opening date",
         "Send": "Send",
         "thankYou": "Thank you",
         "weWillGetBackToYouSoon": "We will get back to you soon."

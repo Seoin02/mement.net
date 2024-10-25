@@ -1,4 +1,4 @@
-import '@/styles/animation.css';
+import '@/styles/about.css';
 
 export default function CircleBackground() {
   return (

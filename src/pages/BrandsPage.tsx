@@ -1,7 +1,7 @@
 import Counter from '@/components/Counter';
 import VideoBox from '@/components/VideoBox';
-import '@/styles/animation.css';
 import { t } from 'i18next';
+import Map from '@/components/Map';
 
 export default function BrandsPage() {
   return (
@@ -37,7 +37,7 @@ export default function BrandsPage() {
     <section className="flex flex-row gap-12 justify-center items-center gap-8 mx-auto w-[80%]">
       <div className="w-[620px] h-48 flex flex-col justify-center items-center">
         <h2 className='h-32 font-bold'>{t("BrandsPage.FranchiseClinicsInKorea")}</h2>
-        <Counter goal={44} duration={3000} />
+        <Counter goal={44} />
       </div>
       <div className="w-[620px] h-48 flex flex-col justify-center items-center">
           <h2 className="h-32 font-bold">{t("BrandsPage.OverseasCorporateOwnedStore")}</h2>
@@ -79,7 +79,7 @@ export default function BrandsPage() {
       </div>
       </div>
     </section>
-    <img src="/image/map.png" alt="map" />
+    <img src="/image/map.png" alt="South Korea Map" />
    </main>
   )
 }

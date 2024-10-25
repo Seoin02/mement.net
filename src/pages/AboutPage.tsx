@@ -2,7 +2,7 @@ import CircleBackground from '@/components/CircleBackground';
 import CrmCircle from '@/components/CrmCircle';
 import ImageBox from '@/components/ImageBox';
 import VideoBox from '@/components/VideoBox';
-import '@/styles/animation.css';
+import '@/styles/about.css';
 import { t } from 'i18next';
 
 export default function AboutPage() {

@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import '@/styles/animation.css';
+import '@/styles/about.css';
 
 export default function CrmCircle() {
   const circleRef = useRef<HTMLDivElement>(null);
