@@ -44,7 +44,7 @@ export default function Header() {
             <div className="absolute -top-1 -left-1 w-16 h-12 bg-black">
               <div className={`${i18n.language === "ko" ? "text-white" : "text-gray-400"} bg-black px-2 py-1 cursor-pointer w-16 whitespace-nowrap`} onClick={() => handleChangeLanguage("ko")}>✓ KOR</div>
               <div className={`${i18n.language === "en" ? "text-white" : "text-gray-400"} bg-black px-2 py-1 cursor-pointer w-16 whitespace-nowrap`} onClick={() => handleChangeLanguage("en")}>✓ ENG</div>
-              <div className={`${i18n.language === "ja" ? "text-white" : "text-gray-400"} bg-black px-2 py-1 cursor-pointer w-16 whitespace-nowrap`} onClick={() => handleChangeLanguage("ja")}>✓ JAP</div>
+              <div className={`${i18n.language === "ja" ? "text-white" : "text-gray-400"} bg-black px-2 py-1 cursor-pointer w-16 whitespace-nowrap`} onClick={() => handleChangeLanguage("ja")}>✓ JPN</div>
             </div>
           )}
         </div>
