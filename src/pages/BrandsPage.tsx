@@ -1,3 +1,4 @@
+import Counter from '@/components/Counter';
 import VideoBox from '@/components/VideoBox';
 import '@/styles/animation.css';
 import { t } from 'i18next';
@@ -36,11 +37,11 @@ export default function BrandsPage() {
     <section className="flex flex-row gap-12 justify-center items-center gap-8 mx-auto w-[80%]">
       <div className="w-[620px] h-48 flex flex-col justify-center items-center">
         <h2 className='h-32 font-bold'>{t("BrandsPage.FranchiseClinicsInKorea")}</h2>
-        <span data-count="44" className="text-[100px] text-[#00A7FF]">0<span className='text-[48px]'>개</span></span>
+        <Counter goal={44} duration={3000} />
       </div>
       <div className="w-[620px] h-48 flex flex-col justify-center items-center">
           <h2 className="h-32 font-bold">{t("BrandsPage.OverseasCorporateOwnedStore")}</h2>
-        <span data-count="4" className="text-[100px] text-[#00A7FF]">0<span className='text-[48px]'>개</span></span>
+        <Counter goal={4} duration={1000} />
       </div>
     </section>
     <hr className="w-[80%] h-[1px] bg-black mx-auto max-w-7xl" />
