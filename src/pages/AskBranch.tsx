@@ -51,8 +51,8 @@ function handleSubmit(e: FormEvent<HTMLFormElement>) {
             <label className="text-left text-[18px] font-bold flex flex-row justify-between gap-4 items-center pointer-cursor ">
                 {t("AskBranchPage.plannedOpeningDate")}
                 {/* <DatePickerInput /> */}
-                <input className="border-b-2 border-gray-300 p-2 w-2/3 custom-date-input" type="date" data-placeholder={t("AskBranchPage.plannedOpeningDate")} name="date" autoComplete="off" required/>
-            </label> 
+                <input className="border-b-2 border-gray-300 p-2 w-2/3 custom-date-input" type="date" data-placeholder={t("AskBranchPage.plannedOpeningDate")} name="plannedOpeningDate" autoComplete="off" required/>
+            </label>
             </div>
             </div>    
             <label className="text-left text-[18px] font-bold flex flex-row items-start mt-8 justify-between">
