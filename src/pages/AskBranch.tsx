@@ -1,3 +1,4 @@
+import timeToKoreaTime from "@/utils/timeToKoreaTime";
 import { t } from "i18next";
 import { FormEvent, useState } from "react";
 
@@ -58,7 +59,7 @@ function handleSubmit(e: FormEvent<HTMLFormElement>) {
                 {t("AskBranchPage.branchInquiryDetails")}
                 <textarea className="border-b-2 border-gray-300 px-2 w-[84.5%] h-[120px]" placeholder={t("AskBranchPage.branchInquiryDetails")} name="문의내용" autoComplete="off"/>
           </label>
-            <input type="hidden" name="문의일시" value={new Date().toISOString()} />
+            <input type="hidden" name="문의일시" value={timeToKoreaTime(new Date())} />
         </form>
         <button form="askBranchForm" type="submit" className="px-[80px] py-[13px] mt-[29px] mx-auto bg-[#00A7FF] hover:bg-white hover:text-[#00A7FF] border-2 border-[#00A7FF] hover:border-[#00A7FF] rounded-sm text-white font-[18px] font-bold cursor-pointer">{t("AskBranchPage.Send")}</button>
         </section>
