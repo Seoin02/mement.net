@@ -7,8 +7,8 @@ export default function Footer(): JSX.Element {
         <a href="/brands" className="text-white font-bold">Brands</a>
         <a href="/community" className="text-white font-bold">Community</a>
     </nav>
-    <ul className="text-[#5C5C5C] text-right text-[14px] pt-4">
-          <li>9F, 509, Teheran-ro, Gangnam-gu, Seoul, Republic of Korea<br/>
+    <ul className="text-[#5C5C5C] text-right text-[14px]">
+          <li className="pt-8">9F, 509, Teheran-ro, Gangnam-gu, Seoul, Republic of Korea<br/>
           Owner EUNHWAN HA | BR# 364-86-00795<br/>
           Copyright © 2019 MEMENT CO., LTD. All rights reserved.</li>
           <br/>
