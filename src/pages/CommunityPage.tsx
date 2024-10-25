@@ -12,7 +12,7 @@ export default function CommunityPage() {
       {t("CommunityPage.description")}
       </p>
     </section>
-    <a href="/ask-branch" className="w-[80%] mx-auto text-black py-[35px] flex justify-between items-center max-w-7xl px-8 border-b-2 border-t-2 border-gray-100 text-[23px] hover:text-[#00A7FF] hover:shadow-md"><p>{t("CommunityPage.AskBranch")}</p><p>ᐳ</p></a>
+    <a href="/ask-branch" className="w-full mx-auto text-black py-[35px] flex justify-between items-center max-w-7xl px-8 border-b-2 border-t-2 border-gray-100 text-[23px] hover:text-[#00A7FF] hover:shadow-md"><p>{t("CommunityPage.AskBranch")}</p><p>ᐳ</p></a>
     </main>
   )
 }
