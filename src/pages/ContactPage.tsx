@@ -61,7 +61,7 @@ export default function ContactPage() {
 
   return (
     <main className="bg-white w-screen h-100% flex flex-col items-center pt-20 gap-28">
-      <section className="flex flex-row justify-between w-[78%]">
+      <section className="flex flex-row justify-between w-[75%]">
         <h1>{t("ContactPage.HeadQuarters")}</h1>
         <div className="flex flex-col items-start w-[50%]">
           <h2>Mement Co. Ltd.</h2>
@@ -70,7 +70,7 @@ export default function ContactPage() {
           <a href="mailto:support@mement.net" className="text-[#00A7FF]">support@mement.net</a>
         </div>
       </section>
-      <section className="flex flex-row justify-between w-[78%]">
+      <section className="flex flex-row justify-between w-[75%]">
         <h1>{t("ContactPage.Subsidiaries")}</h1>
         <div className="flex flex-col items-start w-[50%]">
           <h2 className="text-left">Mement Hong Kong Limited</h2>
