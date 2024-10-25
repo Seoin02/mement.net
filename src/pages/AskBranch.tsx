@@ -31,20 +31,20 @@ function handleSubmit(e: FormEvent<HTMLFormElement>) {
             </label>             
             </div>
             <div className="flex flex-col justify-center gap-8 w-1/2">
-            <label className="text-left text-[18px] font-bold flex flex-row gap-40 items-center">
+            <label className="text-left text-[18px] font-bold flex flex-row justify-between">
                 <p>{t("AskBranchPage.gender")}</p>
-                <div className="flex flex-row gap-4">
-                <label className="flex flex-row gap-4 items-center whitespace-nowrap">
-                <input className="border-b-2 border-gray-300 p-2 pointer-cursor" type="radio" placeholder={t("AskBranchPage.male")} name="gender" value="male"/>
-                {t("AskBranchPage.male")}
-                </label>
-                <label className="flex flex-row gap-4 items-center whitespace-nowrap">
-                <input className="border-b-2 border-gray-300 p-2 w-2/3 pointer-cursor" type="radio" placeholder={t("AskBranchPage.female")} name="gender" value="female"/>
-                {t("AskBranchPage.female")}
-                </label>
+                <div className="flex flex-row gap-4 justify-start w-[2/3]">
+                  <label className="flex flex-row gap-4 items-center whitespace-nowrap">
+                  <input className="border-b-2 border-gray-300 p-2 pointer-cursor" type="radio" placeholder={t("AskBranchPage.male")} name="gender" value="male"/>
+                  {t("AskBranchPage.male")}
+                  </label>
+                  <label className="flex flex-row gap-4 items-center whitespace-nowrap">
+                  <input className="border-b-2 border-gray-300 p-2 w-2/3 pointer-cursor" type="radio" placeholder={t("AskBranchPage.female")} name="gender" value="female"/>
+                  {t("AskBranchPage.female")}
+                  </label>
                 </div>
             </label> 
-            <label className="text-left text-[18px] font-bold flex flex-row justify-between gap-4 items-center">
+            <label className="text-left text-[18px] font-bold flex flex-row justify-between gap-4 items-center pointer-cursor">
                 {t("AskBranchPage.email")}
                 <input className="border-b-2 border-gray-300 p-2 w-2/3" type="email" placeholder={t("AskBranchPage.email")} name="email" autoComplete="off" required/>
             </label> 
@@ -54,12 +54,11 @@ function handleSubmit(e: FormEvent<HTMLFormElement>) {
             </label> 
             </div>
             </div>    
-            <label className="text-left text-[18px] font-bold flex flex-row items-start mt-8 gap-8">
+            <label className="text-left text-[18px] font-bold flex flex-row items-start mt-8 justify-between">
                 {t("AskBranchPage.branchInquiryDetails")}
                 <textarea className="border-b-2 border-gray-300 px-2 w-[84.5%] h-[120px]" placeholder={t("AskBranchPage.branchInquiryDetails")} name="details" autoComplete="off"/>
             </label>
         </form>
-        <hr className="w-[80%] mx-auto" />
         <button form="askBranchForm" type="submit" className="px-[80px] py-[13px] mt-[29px] mx-auto bg-[#00A7FF] hover:bg-white hover:text-[#00A7FF] border-2 border-[#00A7FF] hover:border-[#00A7FF] rounded-sm text-white font-[18px] font-bold cursor-pointer">{t("AskBranchPage.Send")}</button>
         </section>
         {isSubmitted && <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
