@@ -18,16 +18,16 @@ function handleSubmit(e: FormEvent<HTMLFormElement>) {
             <div className="w-full flex flex-row justify-between gap-20">
             <div className="flex flex-col gap-8 w-1/2">
             <label className="text-left text-[18px] font-bold flex flex-row justify-between gap-4 items-center">{t("AskBranchPage.name")}
-                <input className="border-b-2 border-gray-300 p-2 w-2/3" type="text" placeholder={t("AskBranchPage.name")} name="name" required/>
+                <input className="border-b-2 border-gray-300 p-2 w-2/3" type="text" placeholder={t("AskBranchPage.name")} name="name" autoComplete="off" required/>
             </label>
             <label className="text-left text-[18px] font-bold flex flex-row justify-between gap-4 items-center">{t("AskBranchPage.age")}
-                <input className="border-b-2 border-gray-300 p-2 w-2/3" type="number" placeholder={t("AskBranchPage.age")} name="age" required/>
+                <input className="border-b-2 border-gray-300 p-2 w-2/3" type="number" placeholder={t("AskBranchPage.age")} name="age" autoComplete="off" required/>
             </label> 
             <label className="text-left text-[18px] font-bold flex flex-row justify-between gap-4 items-center">{t("AskBranchPage.phoneNumber")}
-                    <input className="border-b-2 border-gray-300 p-2 w-2/3" type="tel" placeholder={t("AskBranchPage.phoneNumber")} name="phone" required/>
+                    <input className="border-b-2 border-gray-300 p-2 w-2/3" type="tel" placeholder={t("AskBranchPage.phoneNumber")} name="phone" autoComplete="off" required/>
             </label> 
             <label className="text-left text-[18px] font-bold flex flex-row justify-between gap-4 items-center">{t("AskBranchPage.prefferedLocation")}
-                <input className="border-b-2 border-gray-300 p-2 w-2/3" type="text" placeholder={t("AskBranchPage.prefferedLocation")} name="location" required/>
+                <input className="border-b-2 border-gray-300 p-2 w-2/3" type="text" placeholder={t("AskBranchPage.prefferedLocation")} name="location" autoComplete="off" required/>
             </label>             
             </div>
             <div className="flex flex-col justify-center gap-8 w-1/2">
@@ -46,17 +46,17 @@ function handleSubmit(e: FormEvent<HTMLFormElement>) {
             </label> 
             <label className="text-left text-[18px] font-bold flex flex-row justify-between gap-4 items-center">
                 {t("AskBranchPage.email")}
-                <input className="border-b-2 border-gray-300 p-2 w-2/3" type="email" placeholder={t("AskBranchPage.email")} name="email" required/>
+                <input className="border-b-2 border-gray-300 p-2 w-2/3" type="email" placeholder={t("AskBranchPage.email")} name="email" autoComplete="off" required/>
             </label> 
             <label className="text-left text-[18px] font-bold flex flex-row justify-between gap-4 items-center pointer-cursor">
                 {t("AskBranchPage.plannedOpeningDate")}
-                <input className="border-b-2 border-gray-300 p-2 w-2/3" type="date" placeholder={t("AskBranchPage.plannedOpeningDate")} name="date" required/>
+                <input className="border-b-2 border-gray-300 p-2 w-2/3" type="date" placeholder={t("AskBranchPage.plannedOpeningDate")} name="date" autoComplete="off" required/>
             </label> 
             </div>
             </div>    
             <label className="text-left text-[18px] font-bold flex flex-row items-start mt-8 gap-8">
                 {t("AskBranchPage.branchInquiryDetails")}
-                <textarea className="border-b-2 border-gray-300 px-2 w-[84.5%] h-[120px]" placeholder={t("AskBranchPage.branchInquiryDetails")} name="details"/>
+                <textarea className="border-b-2 border-gray-300 px-2 w-[84.5%] h-[120px]" placeholder={t("AskBranchPage.branchInquiryDetails")} name="details" autoComplete="off"/>
             </label>
         </form>
         <hr className="w-[80%] mx-auto" />
