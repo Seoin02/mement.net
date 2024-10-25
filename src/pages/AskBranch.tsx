@@ -36,11 +36,11 @@ function handleSubmit(e: FormEvent<HTMLFormElement>) {
                 <p>{t("AskBranchPage.gender")}</p>
                 <div className="flex flex-row gap-4 justify-start w-[2/3]">
                   <label className="flex flex-row gap-4 items-center whitespace-nowrap">
-                  <input className="border-b-2 border-gray-300 p-2 pointer-cursor" type="radio" placeholder={t("AskBranchPage.male")} name="성별" value="male"/>
+                  <input className="border-b-2 border-gray-300 p-2 pointer-cursor" type="radio" placeholder={t("AskBranchPage.male")} name="성별" value="남"/>
                   {t("AskBranchPage.male")}
                   </label>
                   <label className="flex flex-row gap-4 items-center whitespace-nowrap">
-                  <input className="border-b-2 border-gray-300 p-2 w-2/3 pointer-cursor" type="radio" placeholder={t("AskBranchPage.female")} name="성별" value="female"/>
+                  <input className="border-b-2 border-gray-300 p-2 w-2/3 pointer-cursor" type="radio" placeholder={t("AskBranchPage.female")} name="성별" value="여"/>
                   {t("AskBranchPage.female")}
                   </label>
                 </div>
