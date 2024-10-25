@@ -16,20 +16,20 @@ export default function AboutPage() {
       {t("AboutPage.description1")}
       </p>
       </section>
-      <section className="w-[75%] flex flex-row items-center gap-40 mx-auto">
-        <div className="w-[450px] flex flex-col items-center gap-8">
+      <section className="w-[75%] flex flex-row items-center mx-auto gap-8">
+        <div className="w-[35%] flex flex-col items-center gap-8">
           <h1 data-aos="fade-left" className="w-full text-left">{t("AboutPage.Solutions")}</h1>
       <p data-aos="fade-left" className="w-full text-left text-[20px] break-words leading-loose animate-textFade">
       {t("AboutPage.description2")}
           </p>
         </div>
-        <div className="w-[400px] h-[640px] mb-12 relative">
+        <div className="w-[45%] h-[640px] mb-12 relative">
             <CircleBackground />
             <CrmCircle />
         </div>
       </section>
       <div className="section list" id="List">
-    <div className="grid grid-cols-3 gap-12 pl-[160px] pr-[160px] pt-[80px] pb-[80px]">
+    <div className="w-[75%] grid grid-cols-3 gap-12 mx-auto pt-[80px] pb-[80px]">
       <ImageBox title={t("AboutPage.cardTitle1")} description={t("AboutPage.cardDescription1")} image="/image/About/crm.png" />
       <ImageBox title={t("AboutPage.cardTitle2")} description={t("AboutPage.cardDescription2")} image="/image/About/web.png" />
       <ImageBox title={t("AboutPage.cardTitle3")} description={t("AboutPage.cardDescription3")} image="/image/About/app.png" />
