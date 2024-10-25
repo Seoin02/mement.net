@@ -27,7 +27,7 @@ export default function Header() {
   }
 
   return (
-    <header className="flex flex-row justify-between items-center mr-[160px] ml-[160px]">
+    <header className="flex flex-row justify-between items-center mx-auto w-[75%]">
         <a href="/">
             <img src="/image/Logos/MEMENT.png" alt="logo" className="w-24" />
         </a>

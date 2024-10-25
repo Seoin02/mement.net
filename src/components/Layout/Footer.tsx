@@ -1,7 +1,7 @@
 import { t } from "i18next";
 
 export default function Footer(): JSX.Element {
-  return <footer className="flex flex-row justify-between items-center mx-[160px]">
+  return <footer className="flex flex-row justify-between items-center mx-auto w-[75%]">
     <nav className="flex gap-8">
         <a href="/about" className="text-white font-bold">About</a>
         <a href="/brands" className="text-white font-bold">Brands</a>
