@@ -60,7 +60,15 @@
         "plannedOpeningDate": "planned opening date",
         "Send": "Send",
         "thankYou": "Thank you",
-        "weWillGetBackToYouSoon": "We will get back to you soon."
+        "weWillGetBackToYouSoon": "We will get back to you soon.",
+
+        "nameRequired": "Name is required",
+        "ageRequired": "Age is required, for number only",
+        "phoneNumberRequired": "Phone number is required",
+        "prefferedLocationRequired": "Preffered location is required",
+        "emailRequired": "Email is required, email format only",
+        "plannedOpeningDateRequired": "Planned opening date is required",
+        "unknownError": "Unknown error is occurred"
     },
     "ContactPage": {
         "HeadQuarters": "Headquarters",

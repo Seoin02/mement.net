@@ -1,15 +1,50 @@
 import timeToKoreaTime from "@/utils/timeToKoreaTime";
 import { t } from "i18next";
-import { FormEvent, useState } from "react";
+import { ChangeEvent, FormEvent, InvalidEvent, useState } from "react";
 
 export default function AskBranch() {
 const [isSubmitted, setIsSubmitted] = useState(false);
-function handleSubmit(e: FormEvent<HTMLFormElement>) {
-  setIsSubmitted(true);
-  setTimeout(() => {
+  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setIsSubmitted(true);
+    setTimeout(() => {
     window.location.href = "/";
-  }, 2000);
-}
+    }, 2000);
+  }
+
+  function handleInvalid(e: InvalidEvent<HTMLInputElement>) {
+    const input = e.target;
+    if (input.validity.valueMissing) {
+      switch (input.name) {
+        case "이름":
+          input.setCustomValidity(t("AskBranchPage.nameRequired"));
+          break;
+        case "나이":
+          input.setCustomValidity(t("AskBranchPage.ageRequired"));
+          break;
+        case "전화번호":
+          input.setCustomValidity(t("AskBranchPage.phoneNumberRequired"));
+          break;
+        case "개원희망지역":
+          input.setCustomValidity(t("AskBranchPage.prefferedLocationRequired"));
+          break;
+        case "이메일":
+          input.setCustomValidity(t("AskBranchPage.emailRequired"));
+          break;
+        case "개원 예정 일정":
+          input.setCustomValidity(t("AskBranchPage.plannedOpeningDateRequired"));
+          break;
+        default:
+          input.setCustomValidity(t("AskBranchPage.unknownError"));
+          break;
+      }
+    }
+  }
+
+  function handleInputChange(e: ChangeEvent<HTMLInputElement>) {
+    const input = e.target;
+    input.setCustomValidity("");
+  }
 
   return (
     <main className="w-full h-full bg-white py-8">
@@ -19,16 +54,16 @@ function handleSubmit(e: FormEvent<HTMLFormElement>) {
             <div className="w-full flex flex-row justify-between gap-20">
             <div className="flex flex-col gap-8 w-1/2">
             <label className="text-left text-[18px] font-bold flex flex-row justify-between gap-4 items-center">{t("AskBranchPage.name")}
-                <input className="border-b-2 border-gray-300 p-2 w-2/3" type="text" placeholder={t("AskBranchPage.name")} name="이름" autoComplete="off" required/>
+                <input className="border-b-2 border-gray-300 p-2 w-2/3" type="text" placeholder={t("AskBranchPage.name")} name="이름" autoComplete="off" required onInput={handleInputChange} onInvalid={handleInvalid}/>
             </label>
             <label className="text-left text-[18px] font-bold flex flex-row justify-between gap-4 items-center">{t("AskBranchPage.age")}
-                <input className="border-b-2 border-gray-300 p-2 w-2/3" type="number" placeholder={t("AskBranchPage.age")} name="나이" autoComplete="off" required/>
+                <input className="border-b-2 border-gray-300 p-2 w-2/3" type="number" placeholder={t("AskBranchPage.age")} name="나이" autoComplete="off" required onInput={handleInputChange} onInvalid={handleInvalid}/>
             </label> 
             <label className="text-left text-[18px] font-bold flex flex-row justify-between gap-4 items-center">{t("AskBranchPage.phoneNumber")}
-                    <input className="border-b-2 border-gray-300 p-2 w-2/3" type="tel" placeholder={t("AskBranchPage.phoneNumber")} name="전화번호" autoComplete="off" required/>
+                    <input className="border-b-2 border-gray-300 p-2 w-2/3" type="tel" placeholder={t("AskBranchPage.phoneNumber")} name="전화번호" autoComplete="off" required onInput={handleInputChange} onInvalid={handleInvalid}/>
             </label> 
             <label className="text-left text-[18px] font-bold flex flex-row justify-between gap-4 items-center">{t("AskBranchPage.prefferedLocation")}
-                <input className="border-b-2 border-gray-300 p-2 w-2/3" type="text" placeholder={t("AskBranchPage.prefferedLocation")} name="개원희망지역" autoComplete="off" required/>
+                <input className="border-b-2 border-gray-300 p-2 w-2/3" type="text" placeholder={t("AskBranchPage.prefferedLocation")} name="개원희망지역" autoComplete="off" required onInput={handleInputChange} onInvalid={handleInvalid}/>
             </label>             
             </div>
             <div className="flex flex-col justify-center gap-8 w-1/2">
@@ -47,11 +82,11 @@ function handleSubmit(e: FormEvent<HTMLFormElement>) {
             </label> 
             <label className="text-left text-[18px] font-bold flex flex-row justify-between gap-4 items-center pointer-cursor">
                 {t("AskBranchPage.email")}
-                <input className="border-b-2 border-gray-300 p-2 w-2/3" type="email" placeholder={t("AskBranchPage.email")} name="이메일" autoComplete="off" required/>
+                <input className="border-b-2 border-gray-300 p-2 w-2/3" type="email" placeholder={t("AskBranchPage.email")} name="이메일" autoComplete="off" required onInput={handleInputChange} onInvalid={handleInvalid}/>
             </label> 
             <label className="text-left text-[18px] font-bold flex flex-row justify-between gap-4 items-center pointer-cursor ">
                 {t("AskBranchPage.plannedOpeningDate")}
-                <input className="border-b-2 border-gray-300 p-2 w-2/3 custom-date-input" type="date" data-placeholder={t("AskBranchPage.plannedOpeningDate")} name="개원 예정 일정" autoComplete="off" required/>
+                <input className="border-b-2 border-gray-300 p-2 w-2/3 custom-date-input" type="date" data-placeholder={t("AskBranchPage.plannedOpeningDate")} name="개원 예정 일정" autoComplete="off" required onInput={handleInputChange} onInvalid={handleInvalid}  />
             </label>
             </div>
             </div>    

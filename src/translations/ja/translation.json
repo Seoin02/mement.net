@@ -60,7 +60,15 @@
         "plannedOpeningDate": "開店予定日",
         "Send": "送信",
         "thankYou": "ありがとうございます",
-        "weWillGetBackToYouSoon": "すぐにご連絡いたします。"
+        "weWillGetBackToYouSoon": "すぐにご連絡いたします。",
+        
+        "nameRequired": "名前を入力してください。",
+        "ageRequired": "年齢を数字で入力してください。",
+        "phoneNumberRequired": "電話番号を入力してください。",
+        "prefferedLocationRequired": "希望開業地域を入力してください。",
+        "emailRequired": "メールアドレスを正しい形式で入力してください。",
+        "plannedOpeningDateRequired": "開業予定日を入力してください。",
+        "unknownError": "不明なエラーが発生しました。"
     },
     "ContactPage": {
         "HeadQuarters": "本社",

@@ -60,7 +60,15 @@
         "plannedOpeningDate": "개원 예정 일정",
         "Send": "문의하기",
         "thankYou": "감사합니다",
-        "weWillGetBackToYouSoon": "빠른 시일 내에 연락드리겠습니다."
+        "weWillGetBackToYouSoon": "빠른 시일 내에 연락드리겠습니다.",
+
+        "nameRequired": "이름을 입력해주세요.",
+        "ageRequired": "나이를 숫자로 입력해주세요.",
+        "phoneNumberRequired": "전화번호를 입력해주세요.",
+        "prefferedLocationRequired": "개원 희망 지역을 입력해주세요.",
+        "emailRequired": "이메일을 이메일 형식으로 입력해주세요.",
+        "plannedOpeningDateRequired": "개원 예정 일정을 입력해주세요.",
+        "unknownError": "알 수 없는 오류가 발생했습니다."
     },
     "ContactPage": {
         "HeadQuarters": "본사",
