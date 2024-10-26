@@ -1,1 +1,1 @@
-declare module 'translations/i18n';
+declare module 'locales/i18n';

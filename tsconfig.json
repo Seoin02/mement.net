@@ -25,5 +25,5 @@
     },
     "types": ["vite/client", "@types/google.maps"]
   },
-  "include": ["src", "translations"]
+  "include": ["src", "locales"]
 }

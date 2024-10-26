@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import i18n from "@/translations"
+import i18n from "@/locales"
 import { useEffect, useRef, useState } from 'react';
 
 export default function Header() {
