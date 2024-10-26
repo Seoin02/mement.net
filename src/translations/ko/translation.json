@@ -1,23 +1,23 @@
 {
     "HomePage": {
-        "videoTitle1": "테크 기업",
-        "videoTitle2": "뷰티 사업 운영"
+        "videoTitle1": "Tech Company",
+        "videoTitle2": "running Beauty business"
     },
     "AboutPage": {
-        "videoTitle1": "테크 기업",
-        "videoTitle2": "뷰티 비즈니스 운영",
+        "videoTitle1": "뷰티 비즈니스를 운영하는",
+        "videoTitle2": "테크 기업",
         "BeautyXTech": "뷰티 X 테크",
         "description1": "Mement(주)는 대한민국에 본사를 둔 혁신적인 뷰티테크 기업입니다. 홍콩과 베트남 시장 등 전 세계적으로 의료 미용 서비스와 뷰티 제품 판매를 관리하고 제공하고 있습니다. 자체 IT 솔루션으로 광범위한 고객 데이터를 수집하고 이를 구글, 아마존, 페이스북, 애플 등 빅테크 기업 플랫폼과 연계하여 맞춤형 고객 환경으로 뷰티 비즈니스를 운영합니다. Mement(주)는 전통적인 뷰티 서비스 제공업체를 넘어 발전된 정보 기술 시스템과 빅테크 기업들의 최신 기술을 함께 받아들이며 지속 가능한 사업 확장을 하고 있습니다.",
         "Solutions": "솔루션",
         "description2": "고객 관계 관리(CRM)를 통한 연결 솔루션은 사용자 활동을 포함한 광범위한 데이터를 생성합니다. 이커머스 기반 웹사이트와 통합 iOS/Android 애플리케이션은 광범위한 고객 데이터를 바탕으로 맞춤형 환경을 제공하고 사용자에게 최고의 뷰티 서비스 경험을 전달합니다. IT 기반 의료진 교육, 인적 자원 관리, IoT 및 메시징 서비스 등의 연결 솔루션은 각 업무 흐름을 자동화하여 효율적인 비즈니스 운영을 실현합니다.",
         "cardTitle1": "CRM",
-        "cardDescription1": "전자 의무 기록",
+        "cardDescription1": "전자 의료 차트",
         "cardTitle2": "Web",
         "cardDescription2": "이커머스 기반 웹",
         "cardTitle3": "App",
         "cardDescription3": "사용자 활동 데이터 기반 맞춤형 제품 추천",
         "cardTitle4": "HR Solution",
-        "cardDescription4": "인적 자원 관리를 위한 IT 솔루션",
+        "cardDescription4": "인사/근로 관리 전자계약서",
         "cardTitle5": "Edu.",
         "cardDescription5": "콘텐츠 보안 / 평가",
         "cardTitle6": "Messaging",
@@ -25,7 +25,7 @@
         "cardTitle7": "Realtime Report",
         "cardDescription7": "데이터 시각화",
         "cardTitle8": "Display Control",
-        "cardDescription8": "단일 보드 컴퓨터 디스플레이 콘텐츠 관리",
+        "cardDescription8": "디스플레이 콘텐츠 관리",
         "cardTitle9": "App for Clinic",
         "cardDescription9": "안드로이드 카메라 / iOS 셀프 체크인 / 디지털 동의서"
     },
@@ -37,7 +37,8 @@
         "FranchiseClinicsInKorea": "한국 프랜차이즈 지점",
         "OverseasCorporateOwnedStore": "해외 직영점",
         "GeographicalCoverage": "지리적 범위",
-        "description2": "'뮤즈클리닉'과 '샤인빔'을 포함하여 전국에 44개의 가맹점을 보유하고 있습니다. 또한 해외에 4개의 직영 클리닉을 운영하고 있는데, 홍콩의 몽콕, 코즈웨이베이, 침사추이에 3개 지점이 있으며, 베트남 호치민시에 1개 지점이 있습니다."
+        "description2": "'뮤즈클리닉'과 '샤인빔'을 포함하여 전국에 44개의 가맹점을 보유하고 있습니다. 또한 해외에 4개의 직영 클리닉을 운영하고 있는데, 홍콩의 몽콕, 코즈웨이베이, 침사추이에 3개 지점이 있으며, 베트남 호치민시에 1개 지점이 있습니다.",
+        "unit": "개"
     },
     "CommunityPage": {
         "videoTitle1": "Mement",

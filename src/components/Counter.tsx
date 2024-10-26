@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-
+import { t } from 'i18next';
 interface CounterProps {
   goal: number;
   duration?: number;
@@ -48,7 +48,7 @@ export default function Counter({ goal = 0, duration = 2000 }: CounterProps) {
   }, [goal, duration]);
   return (
     <div ref={observerRef} className="text-[100px] text-[#00A7FF]">
-      {count}<span className="text-[48px]">개</span>
+      {count}<span className="text-[48px]">{t('BrandsPage.unit')}</span>
     </div>
   );
 }

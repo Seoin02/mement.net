@@ -37,7 +37,8 @@
         "FranchiseClinicsInKorea": "Franchise Clinics in Korea",
         "OverseasCorporateOwnedStore": "Overseas corporate-owned store",
         "GeographicalCoverage": "Geographical Coverage",
-        "description2": "We have 44 franchised clinics nationwide in Korea, including 'Muse Clinic' and 'Shine Beam'. In addition, we have 4 directly-operated clinics overseas, which include 3 branches in Hong Kong, located in Mong Kok, Causeway Bay, Tsim Sha Tsui and 1 branch in Vietnam, located in Ho Chi Minh City."
+        "description2": "We have 44 franchised clinics nationwide in Korea, including 'Muse Clinic' and 'Shine Beam'. In addition, we have 4 directly-operated clinics overseas, which include 3 branches in Hong Kong, located in Mong Kok, Causeway Bay, Tsim Sha Tsui and 1 branch in Vietnam, located in Ho Chi Minh City.",
+        "unit": "branches"
     },
     "CommunityPage": {
         "videoTitle1": "Mement",
