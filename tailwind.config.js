@@ -2,6 +2,11 @@
 export default {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    screens: {
+      mobile: { max: '767px' },
+      tablet: { min: '768px', max: '1023px' },
+      desktop: { min: '1024px' },
+    },
     extend: {
       fontFamily: {
         pretendard: ['Pretendard'],
@@ -49,7 +54,11 @@ export default {
       animation: {
         fadeInLeft: 'fadeInLeft 1s',
         fadeInRight: 'fadeInRight 1s',
-        fadeIn: 'fadeIn 2s',
+        fadeIn: 'fadeIn 1s',
+        'fade-in-1': 'fadeIn 1s 0.2s',
+        'fade-in-2': 'fadeIn 1s 0.4s',
+        'fade-in-3': 'fadeIn 1s 0.6s',
+        'fade-in-4': 'fadeIn 1s 0.8s',
         textFade: 'textFade 1s ease-out',
       },
       colors: {

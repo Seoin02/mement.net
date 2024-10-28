@@ -9,11 +9,11 @@ body {
 
 @layer base {
   h1 {
-    @apply text-[42px] font-medium;
+    @apply text-[42px] font-medium mobile:text-[22px];
   }
 
   h2 {
-    @apply text-[32px] font-medium;
+    @apply text-[32px] font-medium mobile:text-[22px];
   }
 }
 
@@ -29,8 +29,7 @@ body {
 
   .custom-date-input::before {
     content: attr(data-placeholder);
-    @apply bg-white text-gray-400 absolute left-2 top-1/2 transform -translate-y-1/2 pointer-events-none z-10;
-    width: 80%;
+    @apply bg-white text-gray-400 absolute left-2 top-1/2 transform -translate-y-1/2 pointer-events-none z-10 w-full mobile:left-0;
   }
 
   .custom-date-input:focus::before,

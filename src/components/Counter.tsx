@@ -47,8 +47,8 @@ export default function Counter({ goal = 0, duration = 2000 }: CounterProps) {
     return () => cancelAnimationFrame(animationFrame);
   }, [goal, duration]);
   return (
-    <div ref={observerRef} className="text-[100px] text-[#00A7FF]">
-      {count}<span className="text-[48px]">{t('BrandsPage.unit')}</span>
+    <div ref={observerRef} className="text-[100px] text-[#00A7FF] mobile:text-[60px]">
+      {count}<span className="text-[48px] mobile:hidden">{t('BrandsPage.unit')}</span>
     </div>
   );
 }

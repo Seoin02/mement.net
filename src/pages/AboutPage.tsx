@@ -10,26 +10,26 @@ export default function AboutPage() {
   return (
     <main className="bg-white w-screen h-100% flex flex-col gap-20">
       <VideoBox videoLink="https://mement.net/img/Video/Mement_main.mp4" firstTitle={t("AboutPage.videoTitle1")} secondTitle={t("AboutPage.videoTitle2")}/>
-      <section className="w-[75%] flex flex-col items-center gap-8 mx-auto">
+      <section className="w-[75%] flex flex-col items-center gap-8 mx-auto mobile:w-[85%]">
       <h1 data-aos="fade-left" className="w-full text-left">{t("AboutPage.BeautyXTech")}</h1>
-      <p data-aos="fade-left" className="w-full text-left text-[20px] break-words leading-loose">
+      <p data-aos="fade-left" className="w-full text-left text-[20px] break-words leading-loose mobile:text-[15px] mobile:leading-normal">
       {t("AboutPage.description1")}
       </p>
       </section>
-      <section className="w-[75%] flex flex-row items-center mx-auto gap-8">
-        <div className="w-[35%] flex flex-col items-center gap-8">
-          <h1 data-aos="fade-left" className="w-full text-left">{t("AboutPage.Solutions")}</h1>
-      <p data-aos="fade-left" className="w-full text-left text-[20px] break-words leading-loose animate-textFade">
-      {t("AboutPage.description2")}
-          </p>
+      <section className="w-[75%] flex flex-row items-center mx-auto gap-8 mobile:w-[85%] mobile:flex-col">
+        <div className="w-[35%] flex flex-col items-center gap-8 mobile:w-full">
+        <h1 data-aos="fade-left" className="w-full text-left">{t("AboutPage.Solutions")}</h1>
+        <p data-aos="fade-left" className="w-full text-left text-[20px] break-words leading-loose mobile:text-[15px] mobile:leading-normal">
+        {t("AboutPage.description2")}
+        </p>
         </div>
-        <div className="w-[45%] h-[640px] mb-12 relative">
+        <div className="w-[45%] h-[640px] mb-12 relative mobile:w-full">
             <CircleBackground />
             <CrmCircle />
         </div>
       </section>
       <div className="section list" id="List">
-    <div className="w-[75%] grid grid-cols-3 gap-12 mx-auto pt-[80px] pb-[80px]">
+    <div className="w-[75%] grid grid-cols-3 gap-12 mx-auto pt-[80px] pb-[80px] mobile:grid-cols-1 mobile:mx-8 mobile:w-[85%]">
       <ImageBox title={t("AboutPage.cardTitle1")} description={t("AboutPage.cardDescription1")} image="/image/About/crm.png" />
       <ImageBox title={t("AboutPage.cardTitle2")} description={t("AboutPage.cardDescription2")} image="/image/About/web.png" />
       <ImageBox title={t("AboutPage.cardTitle3")} description={t("AboutPage.cardDescription3")} image="/image/About/app.png" />
