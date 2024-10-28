@@ -24,11 +24,11 @@ export default function AboutPage() {
         </p>
         </div>
         <div className="w-[45%] h-[640px] mobile:h-60 mb-12 relative mobile:w-full">
-            <div className="relative mobile:scale-[0.45] mobile:origin-top-left w-[80%] mobile:mx-auto">
+            <div className="relative mobile:scale-[0.44] mobile:origin-top-left w-[80%] mobile:w-[90%] mobile:mx-auto">
                 <CircleBackground />
                 <CrmCircle />
             </div>
-          </div>
+        </div>
       </section>
       <div className="section list" id="List">
     <div className="w-[75%] grid grid-cols-3 gap-12 mx-auto py-[80px] mobile:grid-cols-1 mobile:mx-8 mobile:w-[85%]">
