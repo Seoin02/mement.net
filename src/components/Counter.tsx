@@ -22,7 +22,7 @@ export default function Counter({ goal = 0, duration = 2000 }: CounterProps) {
           }
         });
       },
-      { threshold: 0.2 }
+      { threshold: 0.1 }
     );
 
     if(observerRef.current) {
