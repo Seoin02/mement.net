@@ -16,20 +16,22 @@ export default function AboutPage() {
       {t("AboutPage.description1")}
       </p>
       </section>
-      <section className="w-[75%] flex flex-row items-center mx-auto gap-8 mobile:w-[85%] mobile:flex-col">
-        <div className="w-[35%] flex flex-col items-center gap-8 mobile:w-full">
+      <section className="w-[75%] flex flex-row items-center gap-8 mobile:w-full mobile:flex-col tablet:flex-col mx-auto">
+        <div className="w-[35%] flex flex-col items-center gap-8 mobile:w-full tablet:w-full mobile:px-8 ">
         <h1 data-aos="fade-left" className="w-full text-left">{t("AboutPage.Solutions")}</h1>
         <p data-aos="fade-left" className="w-full text-left text-[20px] break-words leading-loose mobile:text-[15px] mobile:leading-normal">
         {t("AboutPage.description2")}
         </p>
         </div>
-        <div className="w-[45%] h-[640px] mb-12 relative mobile:w-full">
-            <CircleBackground />
-            <CrmCircle />
-        </div>
+        <div className="w-[45%] h-[640px] mobile:h-60 mb-12 relative mobile:w-full">
+            <div className="relative mobile:scale-[0.45] mobile:origin-top-left w-[80%] mobile:mx-auto">
+                <CircleBackground />
+                <CrmCircle />
+            </div>
+          </div>
       </section>
       <div className="section list" id="List">
-    <div className="w-[75%] grid grid-cols-3 gap-12 mx-auto pt-[80px] pb-[80px] mobile:grid-cols-1 mobile:mx-8 mobile:w-[85%]">
+    <div className="w-[75%] grid grid-cols-3 gap-12 mx-auto py-[80px] mobile:grid-cols-1 mobile:mx-8 mobile:w-[85%]">
       <ImageBox title={t("AboutPage.cardTitle1")} description={t("AboutPage.cardDescription1")} image="/image/About/crm.png" />
       <ImageBox title={t("AboutPage.cardTitle2")} description={t("AboutPage.cardDescription2")} image="/image/About/web.png" />
       <ImageBox title={t("AboutPage.cardTitle3")} description={t("AboutPage.cardDescription3")} image="/image/About/app.png" />
