@@ -1,14 +1,16 @@
 import timeToKoreaTime from "@/utils/timeToKoreaTime";
 import { t } from "i18next";
 import { ChangeEvent, FormEvent, InvalidEvent, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function AskBranch() {
-const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const navigate = useNavigate();
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setIsSubmitted(true);
     setTimeout(() => {
-    window.location.href = "/";
+      navigate("/");
     }, 2000);
   }
 
@@ -50,7 +52,7 @@ const [isSubmitted, setIsSubmitted] = useState(false);
     <main className="w-full h-full bg-white py-8">
       <h1 className="text-left w-[75%] mx-auto">{t("AskBranchPage.AskBranch")}</h1>
       <section className="w-[75%] mx-auto py-14">
-        <form id="askBranchForm" method="POST" onSubmit={handleSubmit} data-email="support@mement.net" className="gform" action={import.meta.env.VITE_GOOGLE_FORM_API_KEY}>
+        <form id="askBranchForm" method="POST" onSubmit={handleSubmit} data-email="a01036270286@gmail.com" className="gform" action={import.meta.env.VITE_GOOGLE_FORM_API_KEY}>
             <div className="w-full flex flex-row justify-between gap-20">
             <div className="flex flex-col gap-8 w-1/2">
             <label className="text-left text-[18px] font-bold flex flex-row justify-between gap-4 items-center">{t("AskBranchPage.name")}

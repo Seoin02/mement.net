@@ -6,14 +6,16 @@ import CommunityPage from '@/pages/CommunityPage';
 import ContactPage from '@/pages/ContactPage';
 import Loading from '@/pages/Loading';
 import AskBranch from '@/pages/AskBranch';
+import NotFound from '@/pages/NotFound';
 
 export const router = createBrowserRouter([
   {
     path: '/',
-      element: (
-          <Loading />
-        ),
-      children: [
+    element: (
+      <Loading />
+    ),
+    errorElement: <NotFound />,
+    children: [
         {
           path: '',
           element: (
