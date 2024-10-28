@@ -37,7 +37,7 @@ export default function BrandsPage() {
     <section className="flex flex-row gap-12 justify-center items-center gap-8 mx-auto w-[80%]">
       <div className="w-[620px] h-48 flex flex-col justify-center items-center mobile:w-[45%]">
         <h2 className='h-32 font-bold'>{t("BrandsPage.FranchiseClinicsInKorea")}</h2>
-        <Counter goal={44} />
+        <Counter goal={44} duration={1000} />
       </div>
       <div className="w-[620px] h-48 flex flex-col justify-center items-center mobile:w-[45%]">
           <h2 className="h-32 font-bold">{t("BrandsPage.OverseasCorporateOwnedStore")}</h2>
