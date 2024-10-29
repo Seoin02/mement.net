@@ -66,7 +66,7 @@ export default function AskBranch() {
                 <input className="mobile:w-full mobile:px-0 border-b-2 border-gray-300 p-2 w-2/3" type="text" placeholder={t("AskBranchPage.prefferedLocation")} name="개원희망지역" autoComplete="off" required onInput={handleInputChange} onInvalid={handleInvalid}/>
             </label>             
             </div>
-            <div className="flex flex-col justify-center gap-8 w-1/2 mobile:w-full">
+            <div className="flex flex-col justify-center gap-8 w-1/2 mobile:w-full mobile:justify-between">
             <label className="text-left text-[18px] font-bold flex flex-row justify-between">
                 <p>{t("AskBranchPage.gender")}</p>
                 <div className="flex flex-row gap-4 justify-start w-[2/3]">
@@ -84,7 +84,7 @@ export default function AskBranch() {
                 {t("AskBranchPage.email")}
                 <input className="mobile:w-full mobile:px-0 border-b-2 border-gray-300 p-2 w-2/3" type="email" placeholder={t("AskBranchPage.email")} name="이메일" autoComplete="off" required onInput={handleInputChange} onInvalid={handleInvalid}/>
             </label> 
-            <label className="text-left text-[18px] font-bold flex flex-row mobile:flex-col mobile:w-full mobile:items-start justify-between gap-4 items-center pointer-cursor ">
+            <label className="mobile:whitespace-nowrap text-left text-[18px] font-bold flex flex-row mobile:flex-col mobile:w-full mobile:items-start justify-between gap-4 items-center pointer-cursor ">
                 {t("AskBranchPage.plannedOpeningDate")}
                 <input className="mobile:w-full mobile:px-0 border-b-2 border-gray-300 p-2 w-2/3 custom-date-input" type="date" data-placeholder={t("AskBranchPage.plannedOpeningDate")} name="개원 예정 일정" autoComplete="off" required onInput={handleInputChange} onInvalid={handleInvalid}  />
             </label>
