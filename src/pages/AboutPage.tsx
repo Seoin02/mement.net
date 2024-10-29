@@ -24,7 +24,7 @@ export default function AboutPage() {
         </p>
         </div>
         <div className="w-[45%] h-[640px] mobile:h-60 mb-12 relative mobile:w-full tablet:w-full tablet:h-[550px] tabletPro:w-full">
-            <div className="relative mobile:scale-[0.44] mobile:origin-top-left w-[80%] mobile:w-[90%] mobile:mx-auto tablet:scale-[0.8] tablet:origin-left tabletPro:scale-[0.9] tabletPro:origin-center tablet:w-full">
+            <div className="relative mobile:scale-[0.44] mobile:origin-top-left w-[80%] mobile:w-[90%] mobile:mx-auto tablet:scale-[0.7] tablet:origin-left tabletPro:scale-[0.9] tabletPro:origin-center tablet:w-full">
                 <CircleBackground />
                 <CrmCircle />
             </div>

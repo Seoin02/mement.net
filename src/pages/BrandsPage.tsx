@@ -79,7 +79,7 @@ export default function BrandsPage() {
       </div>
     </section>
       <img src="/image/map.png" alt="branches Map" className="mobile:hidden" />
-      <div className="desktop:hidden tablet:hidden">
+      <div className="desktop:hidden tablet:hidden tabletPro:hidden">
         <img src="/image/miniMap1.png" alt="South Korea Map" />
         <img src="/image/miniMap2.png" alt="Hongkong and Vietnam Map" />
       </div>

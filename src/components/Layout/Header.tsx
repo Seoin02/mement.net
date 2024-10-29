@@ -30,7 +30,7 @@ export default function Header() {
         <a href="/">
             <img src="/image/Logos/MEMENT.png" alt="logo" className="w-24" />
         </a>
-      <nav className="flex gap-8 mobile:hidden tablet:flex">
+      <nav className="flex gap-8 mobile:hidden tablet:hidden">
         <a href="/about" className="text-white font-bold hover:text-gray-400">About</a>
         <a href="/brands" className="text-white font-bold hover:text-gray-400">Brands</a>
         <a href="/community" className="text-white font-bold hover:text-gray-400">Community</a>
@@ -48,13 +48,13 @@ export default function Header() {
           )}
         </div>
       </nav>
-      <nav className='mobile:flex tablet:hidden desktop:hidden'>
+      <nav className='mobile:flex desktop:hidden tabletPro:hidden'>
         <button onClick={handleSideMenuOpen}>
           <img src="/image/menu.png" alt="menu" className="w-7" />
           {isSideMenuOpen && (
             <ul className="absolute top-0 left-0 w-full min-h-screen bg-black flex flex-col items-center justify-center gap-10 z-20" onClick={(e) => e.stopPropagation()}>
               <button onClick={handleSideMenuOpen}>
-                <img src="/image/close.png" alt="close" className="w-7 absolute top-8 right-8 z-21" />
+                <img src="/image/close.png" alt="close" className="w-7 absolute top-8 right-8 z-21 tablet:right-24" />
               </button>
               <a href="/about" className="text-white bg-black px-2 py-1 text-[28px] font-bold cursor-pointer w-full whitespace-nowrap opacity-0 [animation-fill-mode:forwards] animate-fadeIn">About</a>
               <a href="/brands" className="text-white bg-black px-2 py-1 text-[28px] font-bold cursor-pointer w-full whitespace-nowrap opacity-0 [animation-fill-mode:forwards] animate-fade-in-1">Brands</a>
