@@ -5,7 +5,8 @@ export default {
     screens: {
       mobile: { max: '767px' },
       tablet: { min: '768px', max: '1023px' },
-      desktop: { min: '1024px' },
+      tabletPro: {min: '1024px', max: '1279px'},
+      desktop: { min: '1280px' },
     },
     extend: {
       fontFamily: {
