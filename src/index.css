@@ -29,7 +29,7 @@ body {
 
   .custom-date-input::before {
     content: attr(data-placeholder);
-    @apply bg-white mobile:bg-gray-300 text-gray-400 absolute left-2 top-1/2 transform -translate-y-1/2 pointer-events-none z-10 w-full mobile:left-0;
+    @apply bg-white mobile:bg-gray-100 text-gray-400 absolute left-2 top-1/2 transform -translate-y-1/2 pointer-events-none z-10 w-full mobile:left-0;
   }
 
   .custom-date-input:focus::before,
