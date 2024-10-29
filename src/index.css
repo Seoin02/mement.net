@@ -20,7 +20,7 @@ body {
 @layer components {
   /* 커스텀 날짜 입력 필드 스타일 */
   .custom-date-input {
-    @apply relative border-b-2 border-gray-300 p-2 w-2/3;
+    @apply relative border-b-2 border-gray-300 p-2 w-2/3 mobile:w-full;
   }
 
   .custom-date-input[type="date"]::-webkit-calendar-picker-indicator {
