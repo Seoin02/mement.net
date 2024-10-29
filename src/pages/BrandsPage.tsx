@@ -5,7 +5,7 @@ import { t } from 'i18next';
 export default function BrandsPage() {
   return (
     <main className="bg-white w-screen h-100% flex flex-col gap-20 mobile:overflow-x-hidden">
-      <VideoBox videoLink="https://mement.net/img/Video/Mement_main.mp4#t=16.5" firstTitle={t("BrandsPage.videoTitle1")} secondTitle={t("BrandsPage.videoTitle2")} />
+      <VideoBox videoLink="/mement.mp4#t=16.5" firstTitle={t("BrandsPage.videoTitle1")} secondTitle={t("BrandsPage.videoTitle2")} />
       <section className="w-[75%] flex flex-col items-center gap-8 mx-auto  mobile:w-[85%]">
       <h1 data-aos="fade-left" className="w-full text-left">{t("BrandsPage.Brands")}</h1>
       <p data-aos="fade-left" className="w-full text-left text-[20px] break-words leading-loose mobile:text-[15px] mobile:leading-normal">

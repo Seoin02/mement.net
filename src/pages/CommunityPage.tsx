@@ -5,7 +5,7 @@ export default function CommunityPage() {
  
   return (
     <main className="bg-white w-screen h-100% flex flex-col gap-20 pb-40 mobile:pb-0">
-      <VideoBox videoLink="https://mement.net/img/Video/Mement_main.mp4#t=3" firstTitle="Mement" secondTitle={t("CommunityPage.videoTitle2")} />
+      <VideoBox videoLink="/mement.mp4#t=3" firstTitle="Mement" secondTitle={t("CommunityPage.videoTitle2")} />
       <section className="w-[75%] flex flex-col items-center gap-8 mx-auto mobile:w-[85%]">
       <h1 data-aos="fade-left" className="w-full text-left animate-fade-in">{t("CommunityPage.Community")}</h1>
       <p data-aos="fade-left" className="w-full text-left text-[20px] break-words animate-textFade leading-loose mobile:text-[15px] mobile:leading-normal">
