@@ -45,10 +45,10 @@
         "videoTitle2": "커뮤니티",
         "Community": "커뮤니티",
         "description": "Mement는 전반적인 연결 IT 솔루션을 제공합니다. 시장을 선도하는 IT 기술을 기반으로 해외 직영 클리닉과 한국의 가맹 클리닉의 효율적인 운영과 성장을 위해 노력해 왔습니다. 커뮤니티에서 Mement의 업데이트 소식을 더 자세히 확인해보세요.",
-        "AskBranch": "지점 문의"
+        "AskBranch": "가맹문의"
     },
     "AskBranchPage": {
-        "AskBranch": "지점 문의",
+        "AskBranch": "가맹문의",
         "name": "이름",
         "age": "나이",
         "phoneNumber": "전화번호",
