@@ -1,11 +1,10 @@
 import Counter from '@/components/Counter';
 import VideoBox from '@/components/VideoBox';
 import { t } from 'i18next';
-import Map from '@/components/Map';
 
 export default function BrandsPage() {
   return (
-    <main className="bg-white w-screen h-100% flex flex-col gap-20">
+    <main className="bg-white w-screen h-100% flex flex-col gap-20 mobile:overflow-x-hidden">
       <VideoBox videoLink="https://mement.net/img/Video/Mement_main.mp4#t=16.5" firstTitle={t("BrandsPage.videoTitle1")} secondTitle={t("BrandsPage.videoTitle2")} />
       <section className="w-[75%] flex flex-col items-center gap-8 mx-auto  mobile:w-[85%]">
       <h1 data-aos="fade-left" className="w-full text-left">{t("BrandsPage.Brands")}</h1>

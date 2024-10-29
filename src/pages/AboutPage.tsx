@@ -8,7 +8,7 @@ import { t } from 'i18next';
 export default function AboutPage() {
     
   return (
-    <main className="bg-white w-screen h-100% flex flex-col gap-20">
+    <main className="bg-white w-screen h-100% flex flex-col gap-20 mobile:overflow-x-hidden">
       <VideoBox videoLink="https://mement.net/img/Video/Mement_main.mp4" firstTitle={t("AboutPage.videoTitle1")} secondTitle={t("AboutPage.videoTitle2")}/>
       <section className="w-[75%] flex flex-col items-center gap-8 mx-auto mobile:w-[85%]">
       <h1 data-aos="fade-left" className="w-full text-left">{t("AboutPage.BeautyXTech")}</h1>
